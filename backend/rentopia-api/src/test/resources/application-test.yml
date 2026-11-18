@@ -1,0 +1,11 @@
+rentopia:
+  security:
+    jwt:
+      secret: test-only-secret-0123456789abcdefghijklmnop
+  otp:
+    max-sends-per-window: 3
+
+logging:
+  level:
+    org.flywaydb: WARN
+    io.zonky: WARN

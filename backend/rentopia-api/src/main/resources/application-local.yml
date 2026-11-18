@@ -1,0 +1,17 @@
+# Local development profile: matches docker-compose.yml at the repository root.
+# Run with: mvnw spring-boot:run -Dspring-boot.run.profiles=local
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rentopia
+    username: rentopia
+    password: rentopia
+
+rentopia:
+  security:
+    jwt:
+      # Development-only secret. Never use this value outside your machine.
+      secret: local-dev-secret-change-me-0123456789abcdef
+
+logging:
+  level:
+    com.rentopia: DEBUG
