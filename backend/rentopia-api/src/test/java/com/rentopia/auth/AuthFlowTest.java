@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /** End-to-end HTTP tests for authentication, authorization and the profile API. */
-class AuthFlowIT extends IntegrationTest {
+class AuthFlowTest extends IntegrationTest {
 
     private static final String PASSWORD = "S3cure-Passw0rd";
 
